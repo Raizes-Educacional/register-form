@@ -1,0 +1,10 @@
+{
+  "*.tsx": [
+    "npx eslint 'src/**' --fix",
+    "npx prettier --check --write 'src/**'"
+  ],
+  "*.css": [
+    "npx eslint 'src/**' --fix",
+    "npx prettier --check --write 'src/**'"
+  ]
+}
