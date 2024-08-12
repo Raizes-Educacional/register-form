@@ -17,13 +17,21 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: [
     'react-refresh', 
-    'react-hooks'
+    'react-hooks',
+    'eslint-plugin-import'
   ],
   rules: {
     'react-hooks/rules-of-hooks': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+    ],
+    'sort-imports': [
+      'error', {
+        'ignoreCase': true,
+        'ignoreDeclarationSort': true,
+        'ignoreMemberSort': false
+      }
     ],
   },
 }
